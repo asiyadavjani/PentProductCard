@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product card</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+   <!-- font awsome cdn -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!-- custom css -->
+    <link rel="stylesheet" href="./style.css">
+     <link rel="stylesheet" href="./large.css" media="(max-width:1000px)">
+</head>
+<body>
+ <div class="product">
+       <div class="main"> 
+        <div class="product-image-varity">
+         <img class="varity" width="30px" height="20px"  src="./pent1.webp" alt="pent1">
+        <img class="varity" width="30px" height="20px" src="./pent2.webp" alt="pent2">
+        <img class="varity" width="30px" height="20px" src="./pent3.webp" alt="pent3">
+        <img class="varity" width="30px" height="20px" src="./pent4.webp" alt="pent4">
+        </div>
+        <img id="main" src="./main.jpg" alt="pent" class="main-image"> </div>
+          <div class="product-text">
+            <h1 class="child1 fs-3 px-3">Meternity ful panel favorite ankle jaggings</h1>
+            <div class="child2 d-flex">
+            <h3 class="text-danger fs-4 p-2">$53.00</h3><del class="text-secondary fs-6 p-1 pt-4">$74.95</del>
+            <div class="staricon p-4 fs-5">
+            <i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star text-secondary"></i>
+<i class="fa-solid fa-star text-secondary"></i>(3.3 review)
+            </div>
+
+        </div> 
+        <div class="child3 fw-bold p-3">
+          COLOUR:
+        </div>
+        <div class="child4 circle1 ms-3 rounded-5">
+        </div>
+        <div class="child4 circle2  ms-3 rounded-5">
+        </div>
+        <div class="child4 circle3 ms-3 rounded-5">
+        </div>
+        <div class="child4 circle4 ms-3 rounded-5">
+        </div>
+        <div class="child5 .text-primary-emphasis fw-normal fs-5">REGULAR<hr></div>
+        
+        <div class="child6 d-flex p-2"><h5 class="fw-bold .text-primary-emphasis  ">insteam:</h5>
+        <h5 class=" text-light bg-dark p-1 fs-6 ms-2">regular</h5></div>
+      
+<!-- quantity -->
+ <div class="product-control ms-3 d-flex ">
+  <p class="m-1" style="font-size: 18px; color: #666;">Quantity</p>
+  <div class="d-flex align-items-center border mb-3" style="width: 150px; height: 30px;">
+  <button class="h-100 w-25  border-0" onclick="changeQty(-1)">-</button>
+  <button class="flex-grow-1 text-center fw-bold" id="qty-val">1</button>
+  <button class="h-100 w-25 border-0" onclick="changeQty(1)">+</button>
+  </div>
+ </div>    
+  <button type="button" class="btn btn-danger ms-5 rounded-pill" onclick="colourChange(this)">Add to cart</button>
+ </div>
+
+ <!-- java script -->
+  <script src="./app.js"></script>
+<!-- boot strap -->
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
