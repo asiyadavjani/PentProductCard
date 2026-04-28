@@ -1,14 +1,40 @@
-const mainImg =document.getElementById("main");
-const smallImg =document.querySelectorAll(".varity");
 
-// loop
-smallImg .forEach(i => {
-    i .addEventListener("click",function() {
-         smallImg.forEach(img =>img);
-        this.style.borderColor = 'black';
-         mainImg.src = this.src;
-    })
+
+
+
+const sliderImg = document.getElementById("slider-img");
+const images = ["./pent1.webp", "./pent2.webp", "./pent3.webp", "./pent4.webp"];
+let currentIndex = 0;
+
+// Thumbnail click handler
+const smallImg = document.querySelectorAll(".varity");
+smallImg.forEach((img, index) => {
+    img.addEventListener("click", function() {
+        // Purani borders khatam karein
+        smallImg.forEach(i => i.style.borderColor = "black");
+        // Is waqt click kiye gaye image ko highlight karein
+        this.style.borderColor = 'red'; 
+        currentIndex = index;
+        sliderImg.src = this.src;
+    });
 });
+
+function nextSlide() {
+    currentIndex = (currentIndex + 1) % images.length;
+    sliderImg.src = images[currentIndex];
+}
+
+function prevSlide() {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    sliderImg.src = images[currentIndex];
+}
+
+function setSlide(index) {
+    currentIndex = index;
+    sliderImg.src = images[currentIndex];
+}
+
+
 
 // quantity
 

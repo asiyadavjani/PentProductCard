@@ -14,14 +14,24 @@
 </head>
 <body>
  <div class="product">
-       <div class="main"> 
+       <div class="main">
+
         <div class="product-image-varity">
          <img class="varity" width="30px" height="20px"  src="./pent1.webp" alt="pent1">
         <img class="varity" width="30px" height="20px" src="./pent2.webp" alt="pent2">
         <img class="varity" width="30px" height="20px" src="./pent3.webp" alt="pent3">
         <img class="varity" width="30px" height="20px" src="./pent4.webp" alt="pent4">
         </div>
-        <img id="main" src="./main.jpg" alt="pent" class="main-image"> </div>
+        <div class="slider-container">
+        <img id="slider-img" src="./pent1.webp" alt="product" class="main-image">
+        
+        <i class="arrow-left fa-solid fa-circle-chevron-left" onclick="prevSlide()"></i>
+        <i class="arrow-right fa-solid fa-circle-chevron-right" onclick="nextSlide()"></i>
+    </div>
+       </div>
+        <!-- <img id="main" src="./main.jpg" alt="pent" class="main-image">
+      <i class=" arrow-left fa-solid fa-circle-chevron-left"></i>
+    <i class="fa-solid fa-circle-chevron-right"></i> </div> -->
           <div class="product-text">
             <h1 class="child1 fs-3 px-3">Meternity ful panel favorite ankle jaggings</h1>
             <div class="child2 d-flex">
@@ -62,7 +72,8 @@
  </div>    
   <button type="button" class="btn btn-danger ms-5 rounded-pill" onclick="colourChange(this)">Add to cart</button>
  </div>
-
+ </div>
+ 
  <!-- java script -->
   <script src="./app.js"></script>
 <!-- boot strap -->
